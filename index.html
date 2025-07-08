@@ -3,91 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander Portfolio</title>
+  <title>Alexander Marquez | Python Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       background-color: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .project {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      background-color: #1f2937;
       padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
       margin-bottom: 2rem;
-      transition: transform 0.3s ease;
     }
-    .project:hover {
-      transform: translateY(-5px);
-    }
-    .project h2 {
-      margin-top: 0;
+
+    .card h2 {
       font-size: 1.5rem;
-      color: #2c3e50;
+      margin-bottom: 0.5rem;
+      color: #1f2937;
     }
-    .project p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-    .project a {
-      color: #0066cc;
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #1f2937;
+      color: white;
+      border: none;
+      border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
+      background-color: #e5e7eb;
       font-size: 0.9rem;
-      color: #777;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Alexander Portfolio</h1>
-    <p>Python Developer | Data Analyst | Web App Creator</p>
-  </header>
 
-  <div class="container">
+<header>
+  <h1>Alexander Marquez</h1>
+  <p>Python Developer | Data Analyst | Web App Creator</p>
+</header>
 
-    <div class="project">
-      <h2>🎧 Audio Marketplace Project</h2>
-      <p>A platform to upload, preview, purchase, and review audio effects with admin and user dashboards.</p>
-      <a href="https://github.com/MathError21/AudioSell" target="_blank">View Code →</a>
-    </div>
-
-    <div class="project">
-      <h2>⚽ Football Match Predictor</h2>
-      <p>A Python-based predictive model for forecasting football match outcomes using real historical data and machine learning.</p>
-      <a href="https://github.com/MathError21/Prediction1" target="_blank">View Code →</a>
-    </div>
-
+<section>
+  <div class="card">
+    <h2>👨‍💻 About Me</h2>
+    <p>I love building web applications using Python, solving problems with code, and turning data into insights. I'm passionate about automation, backend logic, and crafting meaningful user experiences.</p>
   </div>
 
-  <footer>
-    © 2025 Alexander Marquez
-  </footer>
+  <div class="card">
+    <h2>⚒️ Skills</h2>
+    <ul>
+      <li>Python (Flask, Streamlit, Pandas, Scikit-learn)</li>
+      <li>Web Development (HTML, CSS, Bootstrap)</li>
+      <li>Data Analysis and Visualization</li>
+      <li>Machine Learning Basics</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🎧 Audio Marketplace Project</h2>
+    <p>A complete platform to upload, preview, purchase, and manage audio effects. Features user authentication, dashboards, PayPal & Nequi integration.</p>
+    <a href="https://github.com/MathError21/AudioSell" class="btn">View Code</a>
+  </div>
+
+  <div class="card">
+    <h2>⚽ Football Match Prediction</h2>
+    <p>This project uses machine learning to predict football match outcomes based on past data. It's a pure Python project with data collection, processing, and model training.</p>
+    <a href="https://github.com/MathError21/Prediction1" class="btn">View Code</a>
+  </div>
+
+  <div class="card">
+    <h2>📬 Contact</h2>
+    <p>Interested in working together or hiring me?</p>
+    <ul>
+      <li>Email: alexander@example.com</li>
+      <li>GitHub: <a href="https://github.com/MathError21">github.com/MathError21</a></li>
+      <li>Location: Colombia 🇨🇴</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Alexander Marquez. All rights reserved.
+</footer>
+
 </body>
 </html>
 
