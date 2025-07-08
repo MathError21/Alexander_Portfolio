@@ -1,101 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alexander Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
     }
-
     header {
       background-color: #2c3e50;
-      padding: 40px 20px;
       color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
-
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 2rem;
     }
-
     header p {
-      font-size: 18px;
-      margin-top: 10px;
+      margin-top: 0.5rem;
+      font-size: 1rem;
     }
-
-    main {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-
     .project {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
     }
-
     .project:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
     }
-
     .project h2 {
       margin-top: 0;
+      font-size: 1.5rem;
       color: #2c3e50;
     }
-
     .project p {
-      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
-
     .project a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #2980b9;
+      color: #0066cc;
       text-decoration: none;
       font-weight: bold;
     }
-
     footer {
       text-align: center;
-      padding: 20px;
-      color: #999;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Alexander Portfolio</h1>
+    <p>Python Developer | Data Analyst | Web App Creator</p>
+  </header>
 
-<header>
-  <h1>Alexander Portfolio</h1>
-  <p>Python Developer | Data Analyst | Web App Creator</p>
-</header>
+  <div class="container">
 
-<main>
-  <div class="project">
-    <h2>🎧 Audio Marketplace Project</h2>
-    <p>A platform to upload, preview, purchase, and review audio effects with admin and user dashboards.</p>
-    <a href="https://github.com/MathError21/audio-marketplace">🔗 View Code</a>
+    <div class="project">
+      <h2>🎧 Audio Marketplace Project</h2>
+      <p>A platform to upload, preview, purchase, and review audio effects with admin and user dashboards.</p>
+      <a href="https://github.com/MathError21/AudioSell" target="_blank">View Code →</a>
+    </div>
+
+    <div class="project">
+      <h2>⚽ Football Match Predictor</h2>
+      <p>A Python-based predictive model for forecasting football match outcomes using real historical data and machine learning.</p>
+      <a href="https://github.com/MathError21/Prediction1" target="_blank">View Code →</a>
+    </div>
+
   </div>
 
-  <div class="project">
-    <h2>⚽ Football Match Prediction</h2>
-    <p>A Python-based predictive model that analyzes past football matches to forecast future outcomes using machine learning.</p>
-    <a href="https://github.com/MathError21/football-predictions">🔗 View Code</a>
-  </div>
-</main>
-
-<footer>
-  &copy; 2025 Alexander Marquez
-</footer>
-
+  <footer>
+    © 2025 Alexander Marquez
+  </footer>
 </body>
 </html>
+
