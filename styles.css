@@ -80,6 +80,7 @@ p {
   color: #555;
 }
 
+/* Skills */
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -106,40 +107,78 @@ p {
   color: #0077cc;
 }
 
-.project-card {
-  border: 1px solid #e0e6ed;
-  border-radius: 10px;
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-square {
+  background-color: #ffffff;
+  border-radius: 12px;
   padding: 20px;
-  margin-bottom: 20px;
-  background-color: #fafbfd;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+.project-square:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
-.project-links {
-  margin-top: 15px;
+.project-square h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 15px 0 10px;
+}
+
+.project-square p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .project-links a {
-  display: inline-block;
-  background-color: #0077cc;
-  color: white;
-  padding: 8px 14px;
+  background-color: #ffffff;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  padding: 6px 12px;
+  margin: 5px;
   border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 500;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .project-links a:hover {
-  background-color: #005fa3;
+  background-color: #0077cc;
+  color: white;
 }
 
+/* Color variants */
+.project-square.blue {
+  border-top: 4px solid #3498db;
+}
+
+.project-square.green {
+  border-top: 4px solid #2ecc71;
+}
+
+/* Other */
 .contact a {
   background-color: #25d366;
   color: #fff;
