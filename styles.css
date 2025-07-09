@@ -20,22 +20,22 @@ header h1 {
   letter-spacing: 1px;
 }
 
-header p {
+#typed-text {
   font-size: 1.2rem;
-  margin-top: 10px;
-  opacity: 0.95;
-  font-weight: 300;
+  font-weight: 400;
+  color: #ffffff;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.8rem;
+#cursor {
+  display: inline-block;
+  color: #ffffff;
+  animation: blink 0.7s steps(1) infinite;
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  opacity: 0.85;
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .container {
@@ -172,4 +172,5 @@ footer {
   font-size: 0.9rem;
   color: #7f8c8d;
 }
+
 
