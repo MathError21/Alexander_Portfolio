@@ -1,13 +1,13 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f6f8;
+  background-color: #f9f9f9;
   color: #2c3e50;
 }
 
 header {
-  background-color: #2c3e50;
+  background-color: #1e2a38;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -21,7 +21,7 @@ header h1 {
 header p {
   font-size: 1.2rem;
   margin-top: 10px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .container {
@@ -30,8 +30,7 @@ header p {
   padding: 0 20px;
 }
 
-.project,
-.contact {
+.about, .skills, .projects, .contact, .code-snippet {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -40,42 +39,91 @@ header p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project:hover,
-.contact:hover {
+.about:hover,
+.skills:hover,
+.projects:hover,
+.contact:hover,
+.code-snippet:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
 
-.project h2,
-.contact h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #34495e;
+h2 {
+  font-size: 1.6rem;
+  color: #1e2a38;
+  margin-bottom: 15px;
 }
 
-.project p,
-.contact p {
+h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #555;
 }
 
-a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
+.skill {
+  background-color: #f0f4f8;
+  padding: 12px 16px;
+  border-radius: 8px;
   text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1e2a38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill i {
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+.project-card {
+  border: 1px solid #e0e6ed;
+  border-radius: 10px;
   padding: 20px;
-  font-size: 0.9rem;
-  color: #7f8c8d;
+  margin-bottom: 20px;
+  background-color: #fafbfd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #005fa3;
 }
 
 .contact a {
@@ -93,6 +141,21 @@ footer {
   background-color: #1ebe5d;
 }
 
-i {
-  margin-right: 8px;
+pre {
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
