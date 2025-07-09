@@ -11,7 +11,9 @@
 
   <header>
     <h1>Alexander Marquez</h1>
-    <p>Python Developer | Data Analyst | Web App Creator</p>
+    <p>
+      <span id="typed-text"></span><span id="cursor">|</span>
+    </p>
   </header>
 
   <main class="container">
@@ -94,7 +96,47 @@ print("Predicted winner:", predicted[0])
     © 2025 Alexander Marquez
   </footer>
 
+  <script>
+    const roles = [
+      "Python Developer",
+      "Data Analyst",
+      "Web App Creator"
+    ];
+
+    let currentRole = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedText = document.getElementById("typed-text");
+    const speed = 100;
+    const pause = 1000;
+
+    function typeEffect() {
+      const role = roles[currentRole];
+      if (isDeleting) {
+        charIndex--;
+        typedText.textContent = role.substring(0, charIndex);
+      } else {
+        charIndex++;
+        typedText.textContent = role.substring(0, charIndex);
+      }
+
+      if (!isDeleting && charIndex === role.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, pause);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        currentRole = (currentRole + 1) % roles.length;
+        setTimeout(typeEffect, speed);
+      } else {
+        setTimeout(typeEffect, speed);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+
 </body>
 </html>
+
 
 
