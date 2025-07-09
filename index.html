@@ -3,119 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander Portfolio</title>
+  <title>Alexander Marquez – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f8;
-      color: #2c3e50;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .project,
-    .contact {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      padding: 30px;
-      margin-bottom: 30px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .project:hover,
-    .contact:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-    }
-
-    .project h2,
-    .contact h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #34495e;
-    }
-
-    .project p,
-    .contact p {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      margin-right: 15px;
-      color: #007bff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #7f8c8d;
-    }
-
-    .contact a {
-      background-color: #25d366;
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-
-    .contact a:hover {
-      background-color: #1ebe5d;
-    }
-
-    i {
-      margin-right: 8px;
-    }
-  </style>
 </head>
 <body>
 
   <header>
-    <h1>Alexander Portfolio</h1>
+    <h1>Alexander Marquez</h1>
     <p>Python Developer | Data Analyst | Web App Creator</p>
   </header>
 
-  <div class="container">
+  <main class="container">
+
+    <section class="about">
+      <h2>👨‍💻 About Me</h2>
+      <p>
+        I'm an Industrial Engineer with strong experience in cost analysis, budgeting, and process optimization.
+        I love using <strong>Python</strong> and <strong>data analysis</strong> to improve decision-making and automate workflows.
+        I’ve built web apps, dashboards, and machine learning tools, combining my background in manufacturing and finance with modern development.
+      </p>
+    </section>
 
     <section class="project">
       <h2><i class="fas fa-headphones"></i> Audio Marketplace Project</h2>
@@ -130,6 +38,26 @@
       <a href="https://github.com/MathError21/Prediction1" target="_blank">📁 View Code</a>
     </section>
 
+    <section class="code-snippet">
+      <h2>🧠 Sample Python Logic</h2>
+      <pre><code>
+import pandas as pd
+
+data = pd.read_csv("matches.csv")
+predicted = model.predict(data[["home_strength", "away_strength"]])
+print("Predicted winner:", predicted[0])
+      </code></pre>
+    </section>
+
+    <section class="code-snippet">
+      <h2>🌐 Sample HTML Snippet</h2>
+      <pre><code>
+&lt;audio controls&gt;
+  &lt;source src="assets/ambiente_bosque.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+      </code></pre>
+    </section>
+
     <section class="contact">
       <h2>Interested in working together?</h2>
       <p>Let’s chat! Contact me directly on WhatsApp.</p>
@@ -138,7 +66,7 @@
       </a>
     </section>
 
-  </div>
+  </main>
 
   <footer>
     © 2025 Alexander Marquez
@@ -146,4 +74,5 @@
 
 </body>
 </html>
+
 
