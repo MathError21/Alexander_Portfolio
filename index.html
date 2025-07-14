@@ -9,16 +9,28 @@
 </head>
 <body>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">Alexander</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
   <header>
     <h1>Alexander Marquez</h1>
-    <p>
-      <span id="typed-text"></span><span id="cursor">|</span>
-    </p>
+    <p><span id="typed-text"></span><span id="cursor">|</span></p>
   </header>
 
   <main class="container">
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>👨‍💻 About Me</h2>
       <p>
         I'm an Industrial Engineer with strong experience in cost analysis, budgeting, and process optimization.
@@ -27,7 +39,7 @@
       </p>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>🛠️ Skills</h2>
       <div class="skill-grid">
         <div class="skill"><i class="fab fa-python"></i> Python</div>
@@ -41,7 +53,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>💼 Projects</h2>
       <div class="project-grid">
 
@@ -67,27 +79,7 @@
       </div>
     </section>
 
-    <section class="code-snippet">
-      <h2>🧠 Sample Python Logic</h2>
-      <pre><code>
-import pandas as pd
-
-data = pd.read_csv("matches.csv")
-predicted = model.predict(data[["home_strength", "away_strength"]])
-print("Predicted winner:", predicted[0])
-      </code></pre>
-    </section>
-
-    <section class="code-snippet">
-      <h2>🌐 Sample HTML Snippet</h2>
-      <pre><code>
-&lt;audio controls&gt;
-  &lt;source src="assets/ambiente_bosque.mp3" type="audio/mpeg"&gt;
-&lt;/audio&gt;
-      </code></pre>
-    </section>
-
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Interested in working together?</h2>
       <p>Let’s chat! Contact me directly on WhatsApp.</p>
       <a href="https://wa.me/573004168562" target="_blank">
@@ -101,6 +93,7 @@ print("Predicted winner:", predicted[0])
     © 2025 Alexander Marquez
   </footer>
 
+  <!-- Typing Effect -->
   <script>
     const roles = [
       "Python Developer",
