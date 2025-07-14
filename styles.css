@@ -1,4 +1,4 @@
-/* --- NAVBAR --- */
+/* NAVBAR */
 .navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -41,7 +41,7 @@
   color: #0077cc;
 }
 
-/* --- GENERAL STYLES --- */
+/* GENERAL */
 html {
   scroll-behavior: smooth;
 }
@@ -92,7 +92,11 @@ header h1 {
   padding: 0 20px;
 }
 
-.about, .skills, .projects, .contact {
+.about,
+.skills,
+.experience,
+.projects,
+.contact {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -104,7 +108,8 @@ header h1 {
 .about:hover,
 .skills:hover,
 .projects:hover,
-.contact:hover {
+.contact:hover,
+.experience:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
@@ -127,7 +132,7 @@ p {
   color: #555;
 }
 
-/* Skills */
+/* SKILLS */
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -154,7 +159,57 @@ p {
   color: #0077cc;
 }
 
-/* Projects */
+/* EXPERIENCE - TIMELINE */
+.experience {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0 0 20px;
+  border-left: 3px solid #0077cc;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  position: absolute;
+  left: -32px;
+  top: 0;
+  font-size: 20px;
+  color: #0077cc;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.timeline-content ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* PROJECTS */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -224,7 +279,7 @@ p {
   border-top: 4px solid #2ecc71;
 }
 
-/* Contact */
+/* CONTACT */
 .contact a {
   background-color: #25d366;
   color: #fff;
@@ -246,5 +301,6 @@ footer {
   font-size: 0.9rem;
   color: #7f8c8d;
 }
+
 
 
